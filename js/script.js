@@ -18,7 +18,7 @@ const team2TossupRemove	= document.getElementById('team2-tossup-remove');
 const team2BonusAdd		= document.getElementById('team2-bonus');
 const team2BonusRemove	= document.getElementById('team2-bonus-remove');
 
-const timerOver = new Audio("../assets/timerOver.mp3");
+const timerOver = new Audio('https://raw.githubusercontent.com/Mastermind497/ScienceBowlTimer/main/assets/timerOver.mp3');
 
 var online = false;
 
