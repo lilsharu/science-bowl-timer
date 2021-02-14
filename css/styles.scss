@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+	font-family: 'Muli', sans-serif;
+	text-align: center;
+	float: none;
+}
+
+h2 {
+	margin: 5px 0;
+}
+
+.main-title {
+	font-family: 'Muli', sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.generic-heading {
+	font-family: 'Muli', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.countdown-timer {
+	text-align: center;
+}
+
+#switch {
+	font-size: 24px;
+	display: block;
+	cursor: pointer;
+}
+
+#online-switch {
+	vertical-align: middle;
+	position: relative;
+	width: 15px;
+	height: 15px;
+	bottom: 1px;
+}
+
+#timer-controller {
+	width: 400px;
+	margin: 5px auto 0 auto;
+	padding: 20px;
+	border-radius: 20px;
+	border: 2px black solid;
+}
+
+#timer, .scoreboard {
+	width: 100%;
+	font-size: 100px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+#timer-controls {
+	text-align: center;
+}
+
+button {
+	font-family: 'Muli', sans-serif;
+	font-size: 20px;
+	height: 80px;
+	width: 100px;
+	margin: 5px 10px;
+	border-radius: 10px;
+}
+
+.good {
+	background-color: rgba(0, 255, 127, 0.8);
+}
+
+.good:hover {
+	background-color: rgba(0, 255, 127, 0.6);
+}
+
+.bad {
+	background-color: rgba(255, 24, 7, 0.8);
+}
+
+.bad:hover {
+	background-color: rgba(255, 24, 7, 0.6);
+}
+
+#scorefather {
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	width: 850px;
+	height: 500px;
+}
+
+.scoreboard {
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+.team-scorer {
+	border: 2px black solid;
+	border-radius: 20px;
+	text-align: center;
+	width: 400px;
+	margin: 0px auto;
+	padding: 5px 0 10px 0;
+}
+
+.left {
+	margin-left: auto;
+	float: left;
+}
+
+.right {
+	margin-right: auto;
+	float: right;
+}
+
+@media(max-width: 900px) {
+	.left {
+		float: none;
+		position: relative;
+		display: block;
+	}
+
+	.right {
+		float: none;
+		position: relative;
+		display: block;
+	}
+
+	.team-scorer {
+		margin: auto;
+		margin-top: 20px;
+		width: 500px;
+	}
+
+	#scorefather {
+		width: 500px;
+		height: 600px;
+	}
+
+	.fullscreen {
+		display: none;
+	}
+
+	.generic-heading {
+		margin: 0;
+	}
+}

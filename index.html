@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Science Bowl Timer and Scorekeeper</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+	<audio id="timerOverAudio" src="assets/timerOver.mp3"></audio>
+	<header>
+		<h1 class="main-title">Science Bowl Timer and Scorekeeper</h1>
+	</header>
+	<section id="countdown-timer">
+		<h2 class="generic-heading">Timer</h2>
+		<div id="switch">
+			<input id="online-switch" type="checkbox">
+			<label for="online-switch">Online Timing</label>
+		</div>
+		<div id="timer-controller">
+			<label class="countdown" id="timer">
+				00:00
+			</label>
+			<div id="timer-controls">
+				<button id="tossup" onclick="tossupTimer()" class="good">Tossup (5s)</button>
+				<button id="bonus" onclick="bonusTimer()"  class="good">Bonus (20s)</button>
+				<button id="reset" onclick="end()" class="bad">Reset / Clear</button>
+			</div>
+		</div>
+	</section>
+	<br>
+	<section id="scorekeeper">
+		<h2 class="generic-heading">Scorekeeper</h2>
+		<div id="scorefather" class="center">
+			<div class="left team-scorer">
+				<h2>Team 1</h2>
+				<div class="scoreboard" id="team1-score">
+					0
+				</div>
+				<br>
+				<div class="score-controller" id="team1-controller">
+					<button id="team1-tossup" onclick="addTossup1()" class="good">Add Tossup (+4)</button>
+					<button id="team1-bonus" onclick="addBonus1()" class="good">Add Bonus (+10)</button>
+					<br class="fullscreen">
+					<button id="team1-tossup-remove" onclick="removeTossup1()" class="bad">Remove Tossup (-4)</button>
+					<button id="team1-bonus-remove" onclick="removeBonus1()" class="bad">Remove Bonus (-10)</button>
+				</div>
+			</div>
+			<div class="right team-scorer">
+				<h2>Team 2</h2>
+				<div class="scoreboard" id="team2-score">
+					0
+				</div>
+				<br>
+				<div class="score-controller" id="team2-controller">
+					<button id="team2-tossup" onclick="addTossup2()" class="good">Add Tossup (+4)</button>
+					<button id="team2-bonus" onclick="addBonus2()" class="good">Add Bonus (+10)</button>
+					<br class="fullscreen">
+					<button id="team2-tossup-remove" onclick="removeTossup2()" class="bad">Remove Tossup (-4)</button>
+					<button id="team2-bonus-remove" onclick="removeBonus2()" class="bad">Remove Bonus (-10)</button>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
