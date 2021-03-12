@@ -6,58 +6,59 @@ body {
   float: none; }
 
 h2 {
-  margin: 5px 0; }
+  margin: 0.3em 0; }
 
 .main-title {
   font-family: 'Muli', sans-serif;
-  font-size: 45px;
+  font-size: 3em;
   font-weight: bold;
-  margin: 10px 0; }
+  margin: .4em 0; }
 
 .generic-heading {
   font-family: 'Muli', sans-serif;
-  font-size: 30px;
+  font-size: 2em;
   font-weight: bold;
-  margin: 0 0 10px 0; }
+  margin: 0 0 .8em 0; }
 
 .countdown-timer {
   text-align: center; }
 
 #switch {
-  font-size: 24px;
+  font-size: 1.5em;
   display: block;
   cursor: pointer; }
 
 #online-switch {
   vertical-align: middle;
   position: relative;
-  width: 15px;
-  height: 15px;
-  bottom: 1px; }
+  width: 1em;
+  height: 1em;
+  bottom: 0.1em; }
 
 #timer-controller {
-  width: 400px;
-  margin: 5px auto 0 auto;
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px black solid; }
+  width: 22vw;
+  min-width: 350px;
+  margin: .5em auto 0 auto;
+  padding: .3em 0 0.6em 0;
+  border-radius: 1.2em;
+  border: 0.15em black solid; }
 
 #timer, .scoreboard {
   width: 100%;
-  font-size: 100px;
+  font-size: 6.5em;
   text-align: center;
-  margin: 0px auto; }
+  margin: 0 auto; }
 
 #timer-controls {
   text-align: center; }
 
 button {
   font-family: 'Muli', sans-serif;
-  font-size: 20px;
-  height: 80px;
-  width: 100px;
-  margin: 5px 10px;
-  border-radius: 10px; }
+  font-size: 1.2em;
+  height: 4.5em;
+  width: 5.2em;
+  margin: .3em .6em;
+  border-radius: 0.6em; }
 
 .good {
   background-color: rgba(0, 255, 127, 0.8); }
@@ -75,21 +76,21 @@ button {
   text-align: center;
   margin: 0 auto;
   position: relative;
-  width: 850px;
-  height: 500px; }
+  width: 60vw;
+  height: 30vh; }
 
 .scoreboard {
-  width: 300px;
-  height: 100px;
+  width: 20vw;
+  height: 10vh;
   margin: 0 auto; }
 
 .team-scorer {
-  border: 2px black solid;
-  border-radius: 20px;
+  border: 0.15em black solid;
+  border-radius: 2em;
   text-align: center;
-  width: 400px;
-  margin: 0px auto;
-  padding: 5px 0 10px 0; }
+  width: 28vw;
+  margin: 0 auto;
+  padding: .3em 0 0.6em 0; }
 
 .left {
   margin-left: auto;
@@ -99,7 +100,7 @@ button {
   margin-right: auto;
   float: right; }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .left {
     float: none;
     position: relative;
@@ -108,12 +109,13 @@ button {
     float: none;
     position: relative;
     display: block; }
-  .team-scorer {
+  .team-scorer, #timer-controller {
     margin: auto;
     margin-top: 20px;
-    width: 500px; }
+    width: 80vw; }
   #scorefather {
-    width: 500px;
+    width: 100vw;
+    max-width: 800px;
     height: 600px; }
   .fullscreen {
     display: none; }
